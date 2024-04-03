@@ -4,7 +4,6 @@ services:
   krakend:
     image: devopsfaith/krakend
     ports:
-      - "8080:8080"
+      - "8081:8081"
     volumes:
-      - "./config/krakend:/etc/krakend"
-    command: ["run","-d", "-c", "/etc/krakend/krakend-config.json"]
+      -  "./config/krakend/krakend-config.json:/etc/krakend/krakend.json"

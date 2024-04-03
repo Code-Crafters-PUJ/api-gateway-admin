@@ -1,33 +1,30 @@
 {
-  "$id": "https://www.krakend.io/schema/v3.json",
   "version": 3,
-  "name": "My first API Gateway - KrakenD",
-  "port": 8080,
+  "port": 8081,
   "endpoints": [
     {
-      "endpoint": "/test",
+      "endpoint": "/user/login",
+      "output_encoding": "json",
+      "input_headers": ["*"],
       "backend": {
-        "host": [
-          "http://172.18.0.2:8081"
-        ],
-        "url_pattern": "/weatherforecast",
-        "disable_tls_verify": true
-      },
-      "method": "GET"
-
-    },
-    {
-      "endpoint": "/santiprueba",
-      "backend": {
-        "host": [
-          "http://172.18.0.3:8080"
-        ],
-        "url_pattern": "/auth/login",
+        "url_pattern": "/user/login",
+        "encoding": "json",
+        "host": ["http://10.43.100.29:8000"],
         "disable_tls_verify": true
       },
       "method": "POST"
-
+    },
+    {
+      "endpoint": "/user/register",
+      "output_encoding": "json",
+      "input_headers": ["*"],
+      "backend": {
+        "url_pattern": "/user/register",
+        "encoding": "json",
+        "host": ["http://10.43.100.29:8000"],
+        "disable_tls_verify": true
+      },
+      "method": "POST"
     }
-    
   ]
-}
+  }
