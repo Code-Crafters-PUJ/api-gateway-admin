@@ -30,7 +30,7 @@
       "output_encoding": "json",
       "input_headers": ["*"],
       "backend": {
-        "url_pattern": "/user/register",
+        "url_pattern": "/Admin/user/register",
         "encoding": "json",
         "host": ["http://10.43.100.29:8000"],
         "disable_tls_verify": true
