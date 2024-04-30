@@ -109,6 +109,54 @@
         "disable_tls_verify": true
       },
       "method": "DELETE"
+    },
+    {
+      "endpoint": "/marketing/stats",
+      "output_encoding": "json",
+      "input_headers": ["*"],
+      "backend": {
+        "url_pattern": "/api/stats",
+        "encoding": "json",
+        "host": ["http://10.43.100.29:3001"],
+        "disable_tls_verify": true
+      },
+      "method": "GET"
+    },
+    {
+      "endpoint": "/marketing/users/landing",
+      "output_encoding": "json",
+      "input_headers": ["*"],
+      "backend": {
+        "url_pattern": "/api/users/landing",
+        "encoding": "json",
+        "host": ["http://10.43.100.29:3001"],
+        "disable_tls_verify": true
+      },
+      "method": "GET"
+    },
+    {
+      "endpoint": "/marketing/history-users",
+      "output_encoding": "json",
+      "input_headers": ["*"],
+      "backend": {
+        "url_pattern": "/api/history-users",
+        "encoding": "json",
+        "host": ["http://10.43.100.29:3001"],
+        "disable_tls_verify": true
+      },
+      "method": "GET"
+    },
+    {
+      "endpoint": "/marketing/request/manage",
+      "output_encoding": "json",
+      "input_headers": ["*"],
+      "backend": {
+        "url_pattern": "/api/request/manage",
+        "encoding": "json",
+        "host": ["http://10.43.100.29:3001"],
+        "disable_tls_verify": true
+      },
+      "method": "POST"
     }
   ],
   "output_encoding": "json"
