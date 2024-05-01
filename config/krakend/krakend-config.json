@@ -267,6 +267,358 @@
         "disable_tls_verify": true
       },
       "method": "GET"
+    },
+    {
+      "endpoint": "/clients/sales",
+      "output_encoding": "json",
+      "input_headers": [
+        "*"
+      ],
+      "backend": {
+        "url_pattern": "/sales",
+        "encoding": "json",
+        "host": [
+          "http://10.43.100.29:3000"
+        ],
+        "disable_tls_verify": true
+      },
+      "method": "POST"
+    },
+    {
+      "endpoint": "/clients/sales/all",
+      "output_encoding": "json",
+      "input_headers": [
+        "*"
+      ],
+      "backend": {
+        "url_pattern": "/sales/all",
+        "encoding": "json",
+        "host": [
+          "http://10.43.100.29:3000"
+        ],
+        "disable_tls_verify": true
+      },
+      "method": "GET"
+    },
+    {
+      "endpoint": "/clients/sales/stats",
+      "output_encoding": "json",
+      "input_headers": [
+        "*"
+      ],
+      "backend": {
+        "url_pattern": "/sales/stats",
+        "encoding": "json",
+        "host": [
+          "http://10.43.100.29:3000"
+        ],
+        "disable_tls_verify": true
+      },
+      "method": "GET"
+    },
+    {
+      "endpoint": "/clients/{clientId}",
+      "output_encoding": "json",
+      "input_headers": [
+        "*"
+      ],
+      "backend": {
+        "url_pattern": "/sales/{clientId}",
+        "encoding": "json",
+        "host": [
+          "http://10.43.100.29:3000"
+        ],
+        "disable_tls_verify": true
+      },
+      "method": "GET"
+    },
+    {
+      "endpoint": "/clients/billing/email",
+      "output_encoding": "json",
+      "input_headers": [
+        "*"
+      ],
+      "backend": {
+        "url_pattern": "/sales/billing/email",
+        "encoding": "json",
+        "host": [
+          "http://10.43.100.29:3000"
+        ],
+        "disable_tls_verify": true
+      },
+      "method": "GET"
+    },
+    {
+      "endpoint": "/plans",
+      "output_encoding": "json",
+      "input_headers": [
+        "*"
+      ],
+      "backend": {
+        "url_pattern": "/plans",
+        "encoding": "json",
+        "host": [
+          "http://10.43.100.29:3000"
+        ],
+        "disable_tls_verify": true
+      },
+      "method": "POST"
+    },
+    {
+      "endpoint": "/plans/all",
+      "output_encoding": "json",
+      "input_headers": [
+        "*"
+      ],
+      "backend": {
+        "url_pattern": "/plans/all",
+        "encoding": "json",
+        "host": [
+          "http://10.43.100.29:3000"
+        ],
+        "disable_tls_verify": true
+      },
+      "method": "GET"
+    },
+    {
+      "endpoint": "/plans/{type}",
+      "output_encoding": "json",
+      "input_headers": [
+        "*"
+      ],
+      "backend": {
+        "url_pattern": "/plans/{type}",
+        "encoding": "json",
+        "host": [
+          "http://10.43.100.29:3000"
+        ],
+        "disable_tls_verify": true
+      },
+      "method": "GET"
+    },
+    {
+      "endpoint": "/plans/{type}",
+      "output_encoding": "json",
+      "input_headers": [
+        "*"
+      ],
+      "backend": {
+        "url_pattern": "/plans/{type}",
+        "encoding": "json",
+        "host": [
+          "http://10.43.100.29:3000"
+        ],
+        "disable_tls_verify": true
+      },
+      "method": "PUT"
+    },
+    {
+      "endpoint": "/plans/{type}",
+      "output_encoding": "json",
+      "input_headers": [
+        "*"
+      ],
+      "backend": {
+        "url_pattern": "/plans/{type}",
+        "encoding": "json",
+        "host": [
+          "http://10.43.100.29:3000"
+        ],
+        "disable_tls_verify": true
+      },
+      "method": "DELETE"
+    },
+    {
+      "endpoint": "/services",
+      "output_encoding": "json",
+      "input_headers": [
+        "*"
+      ],
+      "backend": {
+        "url_pattern": "/services",
+        "encoding": "json",
+        "host": [
+          "http://10.43.100.29:3000"
+        ],
+        "disable_tls_verify": true
+      },
+      "method": "POST"
+    },
+    {
+      "endpoint": "/services/all",
+      "output_encoding": "json",
+      "input_headers": [
+        "*"
+      ],
+      "backend": {
+        "url_pattern": "/services/all",
+        "encoding": "json",
+        "host": [
+          "http://10.43.100.29:3000"
+        ],
+        "disable_tls_verify": true
+      },
+      "method": "GET"
+    },
+    {
+      "endpoint": "/trials",
+      "output_encoding": "json",
+      "input_headers": [
+        "*"
+      ],
+      "backend": {
+        "url_pattern": "/trials",
+        "encoding": "json",
+        "host": [
+          "http://10.43.100.29:3000"
+        ],
+        "disable_tls_verify": true
+      },
+      "method": "POST"
+    },
+    {
+      "endpoint": "/trials/all",
+      "output_encoding": "json",
+      "input_headers": [
+        "*"
+      ],
+      "backend": {
+        "url_pattern": "/trials/all",
+        "encoding": "json",
+        "host": [
+          "http://10.43.100.29:3000"
+        ],
+        "disable_tls_verify": true
+      },
+      "method": "GET"
+    },
+    {
+      "endpoint": "/trials/{type}",
+      "output_encoding": "json",
+      "input_headers": [
+        "*"
+      ],
+      "backend": {
+        "url_pattern": "/trials/{type}",
+        "encoding": "json",
+        "host": [
+          "http://10.43.100.29:3000"
+        ],
+        "disable_tls_verify": true
+      },
+      "method": "GET"
+    },
+    {
+      "endpoint": "/trials/{type}",
+      "output_encoding": "json",
+      "input_headers": [
+        "*"
+      ],
+      "backend": {
+        "url_pattern": "/trials/{type}",
+        "encoding": "json",
+        "host": [
+          "http://10.43.100.29:3000"
+        ],
+        "disable_tls_verify": true
+      },
+      "method": "PUT"
+    },
+    {
+      "endpoint": "/trials/{type}",
+      "output_encoding": "json",
+      "input_headers": [
+        "*"
+      ],
+      "backend": {
+        "url_pattern": "/trials/{type}",
+        "encoding": "json",
+        "host": [
+          "http://10.43.100.29:3000"
+        ],
+        "disable_tls_verify": true
+      },
+      "method": "DELETE"
+    },
+    {
+      "endpoint": "/coupons",
+      "output_encoding": "json",
+      "input_headers": [
+        "*"
+      ],
+      "backend": {
+        "url_pattern": "/coupons",
+        "encoding": "json",
+        "host": [
+          "http://10.43.100.29:3000"
+        ],
+        "disable_tls_verify": true
+      },
+      "method": "POST"
+    },
+    {
+      "endpoint": "/coupons/all",
+      "output_encoding": "json",
+      "input_headers": [
+        "*"
+      ],
+      "backend": {
+        "url_pattern": "/coupons/all",
+        "encoding": "json",
+        "host": [
+          "http://10.43.100.29:3000"
+        ],
+        "disable_tls_verify": true
+      },
+      "method": "GET"
+    },
+    {
+      "endpoint": "/coupons/{code}",
+      "output_encoding": "json",
+      "input_headers": [
+        "*"
+      ],
+      "backend": {
+        "url_pattern": "/coupons/{code}",
+        "encoding": "json",
+        "host": [
+          "http://10.43.100.29:3000"
+        ],
+        "disable_tls_verify": true
+      },
+      "method": "GET"
+    },
+    {
+      "endpoint": "/coupons/{code}",
+      "output_encoding": "json",
+      "input_headers": [
+        "*"
+      ],
+      "backend": {
+        "url_pattern": "/coupons/{code}",
+        "encoding": "json",
+        "host": [
+          "http://10.43.100.29:3000"
+        ],
+        "disable_tls_verify": true
+      },
+      "method": "PUT"
+    },
+    {
+      "endpoint": "/coupons/{code}",
+      "output_encoding": "json",
+      "input_headers": [
+        "*"
+      ],
+      "backend": {
+        "url_pattern": "/coupons/{code}",
+        "encoding": "json",
+        "host": [
+          "http://10.43.100.29:3000"
+        ],
+        "disable_tls_verify": true
+      },
+      "method": "DELETE"
     }
   ],
   "output_encoding": "json"
