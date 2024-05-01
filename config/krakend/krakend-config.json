@@ -3,10 +3,21 @@
   "port": 8081,
   "extra_config": {
     "github_com/devopsfaith/krakend-cors": {
-      "allow_origins": ["*"],
-      "allow_methods": ["GET", "POST", "PUT", "DELETE"],
-      "allow_headers": ["*"],
-      "expose_headers": ["*"],
+      "allow_origins": [
+        "*"
+      ],
+      "allow_methods": [
+        "GET",
+        "POST",
+        "PUT",
+        "DELETE"
+      ],
+      "allow_headers": [
+        "*"
+      ],
+      "expose_headers": [
+        "*"
+      ],
       "max_age": "12h",
       "allow_credentials": true,
       "options_passthrough": true
@@ -16,11 +27,15 @@
     {
       "endpoint": "/user/login",
       "output_encoding": "json",
-      "input_headers": ["*"],
+      "input_headers": [
+        "*"
+      ],
       "backend": {
         "url_pattern": "/Admin/user/login",
         "encoding": "json",
-        "host": ["http://10.43.100.29:8000"],
+        "host": [
+          "http://10.43.100.29:8000"
+        ],
         "disable_tls_verify": true
       },
       "method": "POST"
@@ -28,11 +43,15 @@
     {
       "endpoint": "/user/register",
       "output_encoding": "json",
-      "input_headers": ["*"],
+      "input_headers": [
+        "*"
+      ],
       "backend": {
         "url_pattern": "/Admin/user/register",
         "encoding": "json",
-        "host": ["http://10.43.100.29:8000"],
+        "host": [
+          "http://10.43.100.29:8000"
+        ],
         "disable_tls_verify": true
       },
       "method": "POST"
@@ -40,11 +59,15 @@
     {
       "endpoint": "/venta/all",
       "output_encoding": "json",
-      "input_headers": ["*"],
+      "input_headers": [
+        "*"
+      ],
       "backend": {
         "url_pattern": "/venta/all",
         "encoding": "json",
-        "host": ["http://10.43.100.29:8000"],
+        "host": [
+          "http://10.43.100.29:8000"
+        ],
         "disable_tls_verify": true
       },
       "method": "GET"
@@ -52,11 +75,15 @@
     {
       "endpoint": "/accounts/all",
       "output_encoding": "json",
-      "input_headers": ["*"],
+      "input_headers": [
+        "*"
+      ],
       "backend": {
         "url_pattern": "/Admin/user/getAccounts",
         "encoding": "json",
-        "host": ["http://10.43.100.29:8000"],
+        "host": [
+          "http://10.43.100.29:8000"
+        ],
         "is_collection": true,
         "disable_tls_verify": true
       },
@@ -65,11 +92,15 @@
     {
       "endpoint": "/post/account",
       "output_encoding": "json",
-      "input_headers": ["*"],
+      "input_headers": [
+        "*"
+      ],
       "backend": {
         "url_pattern": "/Admin/user/register",
         "encoding": "json",
-        "host": ["http://10.43.100.29:8000"],
+        "host": [
+          "http://10.43.100.29:8000"
+        ],
         "disable_tls_verify": true
       },
       "method": "POST"
@@ -77,23 +108,34 @@
     {
       "endpoint": "/Admin/user/{id}",
       "output_encoding": "json",
-      "input_headers": ["*"],
+      "input_headers": [
+        "*"
+      ],
       "backend": {
         "url_pattern": "/Admin/user/{id}",
         "encoding": "json",
-        "host": ["http://10.43.100.29:8000"],
+        "host": [
+          "http://10.43.100.29:8000"
+        ],
         "disable_tls_verify": true
       },
-      "methods": ["GET", "PUT"]
+      "methods": [
+        "GET",
+        "PUT"
+      ]
     },
     {
       "endpoint": "/Admin/user/put/{id}",
       "output_encoding": "json",
-      "input_headers": ["*"],
+      "input_headers": [
+        "*"
+      ],
       "backend": {
         "url_pattern": "/Admin/user/{id}",
         "encoding": "json",
-        "host": ["http://10.43.100.29:8000"],
+        "host": [
+          "http://10.43.100.29:8000"
+        ],
         "disable_tls_verify": true
       },
       "method": "PUT"
@@ -101,11 +143,15 @@
     {
       "endpoint": "/Admin/user/delete/{id}",
       "output_encoding": "json",
-      "input_headers": ["*"],
+      "input_headers": [
+        "*"
+      ],
       "backend": {
         "url_pattern": "/Admin/user/{id}",
         "encoding": "json",
-        "host": ["http://10.43.100.29:8000"],
+        "host": [
+          "http://10.43.100.29:8000"
+        ],
         "disable_tls_verify": true
       },
       "method": "DELETE"
@@ -113,11 +159,15 @@
     {
       "endpoint": "/marketing/stats",
       "output_encoding": "json",
-      "input_headers": ["*"],
+      "input_headers": [
+        "*"
+      ],
       "backend": {
         "url_pattern": "/api/stats",
         "encoding": "json",
-        "host": ["http://10.43.100.29:3001"],
+        "host": [
+          "http://10.43.100.29:3001"
+        ],
         "disable_tls_verify": true
       },
       "method": "GET"
@@ -125,11 +175,15 @@
     {
       "endpoint": "/marketing/users/landing",
       "output_encoding": "json",
-      "input_headers": ["*"],
+      "input_headers": [
+        "*"
+      ],
       "backend": {
         "url_pattern": "/api/users/landing",
         "encoding": "json",
-        "host": ["http://10.43.100.29:3001"],
+        "host": [
+          "http://10.43.100.29:3001"
+        ],
         "disable_tls_verify": true
       },
       "method": "GET"
@@ -137,11 +191,15 @@
     {
       "endpoint": "/marketing/history-users",
       "output_encoding": "json",
-      "input_headers": ["*"],
+      "input_headers": [
+        "*"
+      ],
       "backend": {
         "url_pattern": "/api/history-users",
         "encoding": "json",
-        "host": ["http://10.43.100.29:3001"],
+        "host": [
+          "http://10.43.100.29:3001"
+        ],
         "disable_tls_verify": true
       },
       "method": "GET"
@@ -149,14 +207,66 @@
     {
       "endpoint": "/marketing/request/manage",
       "output_encoding": "json",
-      "input_headers": ["*"],
+      "input_headers": [
+        "*"
+      ],
       "backend": {
         "url_pattern": "/api/request/manage",
         "encoding": "json",
-        "host": ["http://10.43.100.29:3001"],
+        "host": [
+          "http://10.43.100.29:3001"
+        ],
         "disable_tls_verify": true
       },
       "method": "POST"
+    },
+    {
+      "endpoint": "/pqrs/all",
+      "output_encoding": "json",
+      "input_headers": [
+        "*"
+      ],
+      "backend": {
+        "url_pattern": "/PQRS",
+        "encoding": "json",
+        "host": [
+          "http://10.43.100.29:8001"
+        ],
+        "disable_tls_verify": true
+      },
+      "method": "GET"
+    },
+    {
+      "endpoint": "/pqrs/{id}",
+      "output_encoding": "json",
+      "input_headers": [
+        "*"
+      ],
+      "backend": {
+        "url_pattern": "/clients/PQRS/{id}",
+        "encoding": "json",
+        "host": [
+          "http://10.43.100.29:8001"
+        ],
+        "disable_tls_verify": true
+      },
+      "method": "GET"
+    },
+    {
+      "endpoint": "/pqrs/clients/{id}",
+      "output_encoding": "json",
+      "input_headers": [
+        "*"
+      ],
+      "backend": {
+        "url_pattern": "/clients/{id}",
+        "encoding": "json",
+        "host": [
+          "http://10.43.100.29:8001"
+        ],
+        "disable_tls_verify": true
+      },
+      "method": "GET"
     }
   ],
   "output_encoding": "json"
