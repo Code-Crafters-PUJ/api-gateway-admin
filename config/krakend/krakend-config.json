@@ -301,6 +301,38 @@
       "method": "GET"
     },
     {
+      "endpoint": "/clients/all",
+      "output_encoding": "json",
+      "input_headers": [
+        "*"
+      ],
+      "backend": {
+        "url_pattern": "/clients/all",
+        "encoding": "json",
+        "host": [
+          "http://10.43.100.29:3000"
+        ],
+        "disable_tls_verify": true
+      },
+      "method": "GET"
+    },
+    {
+      "endpoint": "/clients/{id}",
+      "output_encoding": "json",
+      "input_headers": [
+        "*"
+      ],
+      "backend": {
+        "url_pattern": "/clients/{id}",
+        "encoding": "json",
+        "host": [
+          "http://10.43.100.29:3000"
+        ],
+        "disable_tls_verify": true
+      },
+      "method": "GET"
+    },
+    {
       "endpoint": "/clients/sales/stats",
       "output_encoding": "json",
       "input_headers": [
@@ -317,7 +349,7 @@
       "method": "GET"
     },
     {
-      "endpoint": "/clients/{clientId}",
+      "endpoint": "/clients/sales/{clientId}",
       "output_encoding": "json",
       "input_headers": [
         "*"
