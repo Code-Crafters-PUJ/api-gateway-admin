@@ -378,10 +378,10 @@
         ],
         "disable_tls_verify": true
       },
-      "method": "GET"
+      "method": "POST"
     },
     {
-      "endpoint": "/plans",
+      "endpoint": "/clients/plans",
       "output_encoding": "json",
       "input_headers": [
         "*"
@@ -397,7 +397,7 @@
       "method": "POST"
     },
     {
-      "endpoint": "/plans/all",
+      "endpoint": "/clients/plans/all",
       "output_encoding": "json",
       "input_headers": [
         "*"
@@ -413,7 +413,7 @@
       "method": "GET"
     },
     {
-      "endpoint": "/plans/{type}",
+      "endpoint": "/clients/plans/{type}",
       "output_encoding": "json",
       "input_headers": [
         "*"
@@ -429,7 +429,7 @@
       "method": "GET"
     },
     {
-      "endpoint": "/plans/{type}",
+      "endpoint": "/clients/plans/{type}",
       "output_encoding": "json",
       "input_headers": [
         "*"
@@ -445,7 +445,7 @@
       "method": "PUT"
     },
     {
-      "endpoint": "/plans/{type}",
+      "endpoint": "/clients/plans/{type}",
       "output_encoding": "json",
       "input_headers": [
         "*"
@@ -461,7 +461,7 @@
       "method": "DELETE"
     },
     {
-      "endpoint": "/services",
+      "endpoint": "/clients/services",
       "output_encoding": "json",
       "input_headers": [
         "*"
@@ -477,7 +477,7 @@
       "method": "POST"
     },
     {
-      "endpoint": "/services/all",
+      "endpoint": "/clients/services/all",
       "output_encoding": "json",
       "input_headers": [
         "*"
@@ -493,7 +493,39 @@
       "method": "GET"
     },
     {
-      "endpoint": "/trials",
+      "endpoint": "/clients/services/{name}",
+      "output_encoding": "json",
+      "input_headers": [
+        "*"
+      ],
+      "backend": {
+        "url_pattern": "/services/{name}",
+        "encoding": "json",
+        "host": [
+          "http://10.43.100.29:3000"
+        ],
+        "disable_tls_verify": true
+      },
+      "method": "PUT"
+    },
+    {
+      "endpoint": "/clients/services/{name}",
+      "output_encoding": "json",
+      "input_headers": [
+        "*"
+      ],
+      "backend": {
+        "url_pattern": "/services/{name}",
+        "encoding": "json",
+        "host": [
+          "http://10.43.100.29:3000"
+        ],
+        "disable_tls_verify": true
+      },
+      "method": "DELETE"
+    },
+    {
+      "endpoint": "/clients/trials",
       "output_encoding": "json",
       "input_headers": [
         "*"
@@ -509,7 +541,7 @@
       "method": "POST"
     },
     {
-      "endpoint": "/trials/all",
+      "endpoint": "/clients/trials/all",
       "output_encoding": "json",
       "input_headers": [
         "*"
@@ -525,7 +557,7 @@
       "method": "GET"
     },
     {
-      "endpoint": "/trials/{type}",
+      "endpoint": "/clients/trials/{type}",
       "output_encoding": "json",
       "input_headers": [
         "*"
@@ -541,7 +573,7 @@
       "method": "GET"
     },
     {
-      "endpoint": "/trials/{type}",
+      "endpoint": "/clients/trials/{type}",
       "output_encoding": "json",
       "input_headers": [
         "*"
@@ -557,7 +589,7 @@
       "method": "PUT"
     },
     {
-      "endpoint": "/trials/{type}",
+      "endpoint": "/clients/trials/{type}",
       "output_encoding": "json",
       "input_headers": [
         "*"
@@ -573,7 +605,7 @@
       "method": "DELETE"
     },
     {
-      "endpoint": "/coupons",
+      "endpoint": "/clients/coupons",
       "output_encoding": "json",
       "input_headers": [
         "*"
@@ -589,7 +621,7 @@
       "method": "POST"
     },
     {
-      "endpoint": "/coupons/all",
+      "endpoint": "/clients/coupons/all",
       "output_encoding": "json",
       "input_headers": [
         "*"
@@ -605,7 +637,7 @@
       "method": "GET"
     },
     {
-      "endpoint": "/coupons/{code}",
+      "endpoint": "/clients/coupons/{code}",
       "output_encoding": "json",
       "input_headers": [
         "*"
@@ -621,7 +653,7 @@
       "method": "GET"
     },
     {
-      "endpoint": "/coupons/{code}",
+      "endpoint": "/clients/coupons/{code}",
       "output_encoding": "json",
       "input_headers": [
         "*"
@@ -637,7 +669,7 @@
       "method": "PUT"
     },
     {
-      "endpoint": "/coupons/{code}",
+      "endpoint": "/clients/coupons/{code}",
       "output_encoding": "json",
       "input_headers": [
         "*"
