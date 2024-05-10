@@ -7,3 +7,20 @@ services:
       - "8081:8081"
     volumes:
       -  "./config/krakend/krakend-config.json:/etc/krakend/krakend.json"
+  msadmin-marketing:
+    build: ../msadmin-marketing
+    ports:
+      - "3001:3001"
+  msadmin-support:
+    build: ../msadmin-support
+    ports:
+      - "8001:8000"
+  # msadmin-company-sales:
+  #   build: ../msadmin-company-sales
+  #   ports:
+  #     - "3000:3000"
+  # msadmin-users:
+  #   build: ../msadmin-users
+  #   ports:
+  #     - "8000:8000"
+
